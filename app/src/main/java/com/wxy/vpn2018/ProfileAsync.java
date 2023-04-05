@@ -51,7 +51,7 @@ public class ProfileAsync extends AsyncTask<Void, Void, Boolean> {
     @Override
     protected Boolean doInBackground(Void... voids) {
         try {
-            URL url = new URL("<your profile web url>");// TODO 你的配置文件URL地址
+            URL url = new URL("google.com");// TODO 你的配置文件URL地址
 //            InputStream inputStream = url.openConnection().getInputStream();
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setConnectTimeout(10 * 1000);
